@@ -23,7 +23,7 @@ int out(char a[], int b[], int n, int max)
 int main()
 {
 	char str[50],a[50];
-	int b[500],max,j,i,n,check,key;
+	int b[500],max,j,i,n,check,key;	
 	do  {	
 			a[0]='\0'; max=0;b[0]='\0';n=0;
 			printf("\nInput string: ");
@@ -41,13 +41,13 @@ int main()
 							check=0;
 						}
 					}if(check)
-				{	
-					a[n]=str[i];
-					a[n+1]='\0';
-					b[n]=1;
-					b[n+1]='\0';
-					n++;
-				}
+						{	
+						a[n]=str[i];
+						a[n+1]='\0';
+						b[n]=1;
+						b[n+1]='\0';
+						n++;
+						}			
 			}
 			}
 			out(a,b,n,max);
